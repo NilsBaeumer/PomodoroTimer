@@ -1,7 +1,5 @@
 import tkinter as tk
 from tkinter import messagebox
-import time
-import winsound
 
 class PomodoroTimer:
     def __init__(self, master):
@@ -9,7 +7,7 @@ class PomodoroTimer:
         self.master.title("Pomodoro Timer")
         self.master.geometry("300x300")
         self.master.config(bg="#E5E5E5")
-        self.master.iconbitmap('C:\\Users\\baeum\\Documents\\dev\\PomodoroTimer\\icon.ico')  # Pfad zum ICO-Bild hinzufügen
+        self.master.iconbitmap('static\\icon.ico')  # Pfad zum ICO-Bild hinzufügen
 
         self.work_duration = tk.IntVar(value=25)
         self.break_duration = tk.IntVar(value=5)
